@@ -11,6 +11,7 @@ export const ABOUT_SUMMARY: AboutSummary = {
   summary:
     'Eden Wendmnew is an Attorney and Consultant at Law at all levels of Federal Courts. From January 2020 to April 2026 she was Corporate Lawyer at TECNO. In 2026 she opened her own office in Addis Ababa. She works alone, so every client deals with her directly.',
   buttonText: 'More about Eden',
+  illustration: '/about/lady-justice.png',
 };
 
 export const ABOUT_PAGE_META: PageMeta = {

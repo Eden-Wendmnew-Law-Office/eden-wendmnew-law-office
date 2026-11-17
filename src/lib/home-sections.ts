@@ -6,14 +6,14 @@
 
 import { siteConfig, type HomeSectionId } from '@/config/site';
 import { SERVICES } from '@/data/services';
-import { PRACTICE_AREAS } from '@/data/practice-areas';
+import { FEATURED_PRACTICE_AREAS } from '@/data/practice-areas';
 import { FEATURED_PROJECTS } from '@/data/projects';
 import { PARTNERS } from '@/data/partners';
 import { TESTIMONIALS } from '@/data/testimonials';
 
 /** Sections that depend on data; every other section always has content. */
 const HAS_CONTENT = new Map<HomeSectionId, boolean>([
-  ['practice-areas', PRACTICE_AREAS.length > 0],
+  ['practice-areas', FEATURED_PRACTICE_AREAS.length > 0],
   ['services', SERVICES.length > 0],
   ['projects', FEATURED_PROJECTS.length > 0],
   ['partners', PARTNERS.length > 0],

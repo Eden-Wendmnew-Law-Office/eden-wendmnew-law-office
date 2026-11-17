@@ -33,6 +33,7 @@ export const PRACTICE_AREAS: PracticeArea[] = [
       'Changes to capital, shareholders or address',
     ],
     serviceSlug: 'company-formation',
+    featured: true,
   },
   {
     title: 'Foreign Investment',
@@ -45,6 +46,7 @@ export const PRACTICE_AREAS: PracticeArea[] = [
       'Choosing the company structure',
     ],
     serviceSlug: 'investment-consulting',
+    featured: true,
   },
   {
     title: 'Intellectual Property',
@@ -57,6 +59,7 @@ export const PRACTICE_AREAS: PracticeArea[] = [
       'Renewal',
     ],
     serviceSlug: 'trademark-registration',
+    featured: false,
   },
   {
     title: 'Contract Law',
@@ -68,6 +71,7 @@ export const PRACTICE_AREAS: PracticeArea[] = [
       'Negotiating terms',
     ],
     serviceSlug: 'contract-drafting',
+    featured: true,
   },
   {
     title: 'Labour and Employment',
@@ -79,6 +83,7 @@ export const PRACTICE_AREAS: PracticeArea[] = [
       'Reviewing company policies',
     ],
     serviceSlug: 'regulatory-compliance',
+    featured: false,
   },
   {
     title: 'Tax and Regulatory',
@@ -86,6 +91,7 @@ export const PRACTICE_AREAS: PracticeArea[] = [
     summary: 'Registration, licences and reporting duties for businesses operating in Ethiopia.',
     matters: ['Tax registration (TIN)', 'Licence renewals', 'Tax and reporting duties'],
     serviceSlug: 'regulatory-compliance',
+    featured: false,
   },
   {
     title: 'Civil Litigation',
@@ -98,6 +104,7 @@ export const PRACTICE_AREAS: PracticeArea[] = [
       'Settlement talks',
     ],
     serviceSlug: 'court-representation',
+    featured: true,
   },
   {
     title: 'Criminal Litigation',
@@ -109,5 +116,9 @@ export const PRACTICE_AREAS: PracticeArea[] = [
       'Representation at the Federal First Instance, High and Supreme Courts',
     ],
     serviceSlug: 'court-representation',
+    featured: false,
   },
 ];
+
+/** The main areas, shown on the homepage */
+export const FEATURED_PRACTICE_AREAS = PRACTICE_AREAS.filter((area) => area.featured);

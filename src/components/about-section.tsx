@@ -16,7 +16,7 @@ interface AboutSectionProps {
 }
 
 export function AboutSection({ about }: AboutSectionProps) {
-  const { title, summary: shortText, buttonText } = about;
+  const { title, summary: shortText, buttonText, illustration } = about;
 
   return (
     <section id="about" className="section-y bg-surface-page relative overflow-hidden">
@@ -50,6 +50,34 @@ export function AboutSection({ about }: AboutSectionProps) {
               </div>
             </ScrollReveal>
           </div>
+
+          {/* Right: the drawing in the accent color, inside an arch with a thin
+              accent line (the hero's frame) */}
+          {illustration && (
+            <ScrollReveal delay={0.2} className="order-1 lg:order-2">
+              <div className="mx-auto w-full max-w-[15rem] sm:max-w-[17rem] lg:max-w-[20rem]">
+                <div className="border-brand-accent/60 rounded-t-full border p-2 sm:p-2.5">
+                  <div className="bg-surface-card relative flex aspect-[4/5] items-end justify-center overflow-hidden rounded-t-full">
+                    <div
+                      role="img"
+                      aria-label="Lady Justice holding the scales"
+                      className="bg-brand-accent-text h-[82%] w-[82%]"
+                      style={{
+                        maskImage: `url(${illustration})`,
+                        WebkitMaskImage: `url(${illustration})`,
+                        maskSize: 'contain',
+                        WebkitMaskSize: 'contain',
+                        maskRepeat: 'no-repeat',
+                        WebkitMaskRepeat: 'no-repeat',
+                        maskPosition: 'center bottom',
+                        WebkitMaskPosition: 'center bottom',
+                      }}
+                    />
+                  </div>
+                </div>
+              </div>
+            </ScrollReveal>
+          )}
         </div>
       </Container>
     </section>

@@ -153,7 +153,7 @@ export const siteConfig = {
     desktop: [
       { href: '/', label: 'Home' },
       { href: '/#about', label: 'About', section: 'about' },
-      { href: '/practice-areas', label: 'Practice Areas' },
+      { href: '/#practice-areas', label: 'Practice Areas', section: 'practice-areas' },
       { href: '/#services', label: 'Services', section: 'services' },
       { href: '/#testimonials', label: 'Testimonials', section: 'testimonials' },
       { href: '/#contact', label: 'Contact', section: 'contact' },
@@ -161,7 +161,7 @@ export const siteConfig = {
     tablet: [
       { href: '/', label: 'Home' },
       { href: '/#about', label: 'About', section: 'about' },
-      { href: '/practice-areas', label: 'Practice Areas' },
+      { href: '/#practice-areas', label: 'Practice Areas', section: 'practice-areas' },
       { href: '/#services', label: 'Services', section: 'services' },
     ] as NavLink[],
     // The header button is the primary conversion action (see `conversion`)

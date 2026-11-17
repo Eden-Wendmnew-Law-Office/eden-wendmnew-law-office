@@ -177,6 +177,7 @@ const contentSchemas = [
           summary: text,
           matters: z.array(text),
           serviceSlug: z.enum(SERVICES.map((service) => service.slug)),
+          featured: z.boolean(),
         })
       ),
     }),

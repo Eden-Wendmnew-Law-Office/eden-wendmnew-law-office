@@ -17,7 +17,7 @@ export const HOME_PAGE: HomePage = {
   servicesSubtitle: 'Six areas of work for foreign investors, business owners and individuals.',
   practiceAreasTitle: 'Practice areas',
   practiceAreasSubtitle:
-    'The areas of Ethiopian law Eden works in, from setting up a company to defending a case in court.',
+    'The main areas of Ethiopian law Eden works in. The full list is on the Practice Areas page.',
   projectsTitle: 'Work',
   projectsSubtitle: 'Selected matters.',
   partnersTitle: 'Clients',

@@ -14,7 +14,7 @@ import type { HomeSectionId } from '@/config/site';
 import { HOME_PAGE } from '@/data/home';
 import { ABOUT_SUMMARY } from '@/data/about';
 import { SERVICES } from '@/data/services';
-import { PRACTICE_AREAS } from '@/data/practice-areas';
+import { FEATURED_PRACTICE_AREAS } from '@/data/practice-areas';
 import { FEATURED_PROJECTS } from '@/data/projects';
 import { PARTNERS } from '@/data/partners';
 import { TESTIMONIALS } from '@/data/testimonials';
@@ -33,7 +33,7 @@ const SECTIONS = new Map<HomeSectionId, () => ReactNode>([
       <PracticeAreasSection
         title={HOME_PAGE.practiceAreasTitle}
         subtitle={HOME_PAGE.practiceAreasSubtitle}
-        areas={PRACTICE_AREAS}
+        areas={FEATURED_PRACTICE_AREAS}
       />
     ),
   ],

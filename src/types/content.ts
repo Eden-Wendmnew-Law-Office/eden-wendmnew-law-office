@@ -69,6 +69,8 @@ export interface PracticeArea {
   matters: string[];
   /** Slug of the related service in src/data/services.ts */
   serviceSlug: string;
+  /** Shown on the homepage (the main areas); every area shows on /practice-areas */
+  featured: boolean;
 }
 
 export interface PracticeAreasPage {
@@ -129,6 +131,12 @@ export interface AboutSummary {
   title: string;
   summary: string;
   buttonText: string;
+  /**
+   * Optional one-color drawing beside the text (client custom work, Eden
+   * Wendmnew): a transparent PNG under public/, painted in the accent color
+   * through a CSS mask so it follows light and dark mode. Empty = none.
+   */
+  illustration?: string;
 }
 
 /** When a conditional legal paragraph shows (see src/data/legal.ts) */

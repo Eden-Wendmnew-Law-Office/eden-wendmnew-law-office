@@ -1,7 +1,7 @@
 /**
  * Practice Areas Section (client custom work, Eden Wendmnew)
- * Homepage: every area as a card with its summary and a link to the full
- * page. /practice-areas (`detailed`): each card also lists typical matters.
+ * Homepage: the featured (main) areas, each with its summary, and a button to
+ * the full page. /practice-areas (`detailed`): each card also lists typical matters.
  * Each card links to the related service. Built from the shared Container,
  * SectionHeading, Card and stagger blocks, so colors, fonts and dark mode
  * follow site.ts.
@@ -120,7 +120,7 @@ function PracticeAreaCard({
         </div>
       )}
 
-      {service && (
+      {detailed && service && (
         <Link
           href={`/services/${service.slug}`}
           className="text-brand-accent-text group mt-6 inline-flex items-center gap-1.5 text-sm font-medium"

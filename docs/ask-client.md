@@ -14,7 +14,7 @@
 - Contact: booking link, if she uses one. None in version 1.
 - Contact: languages she gives consultations in. Version 1 lists English only.
 - Contact: first consultation free or paid.
-- Contact form: her own Web3Forms access key (free, at web3forms.com, sent to her email). The form stays hidden until it is added.
+- Contact form: her own Web3Forms access key (free, at web3forms.com, sent to her email). The preview shows the form, but messages do not send until the key is added.
 - Services: the included points of each service, as she would describe them.
 - Testimonials: real quotes with name, company or role, and permission. The preview shows 3 labelled samples; each must be replaced before launch.
 - Logo: a clean SVG or transparent PNG. Version 1 uses the JPG cropped to the figure, in navy and in white; at favicon size the figure does not read.
@@ -28,7 +28,7 @@
 - Homepage, About: the summary paragraph, including "In 2026 she opened her own office".
 - About page: every section (Who she is, What she does, Background, How she works, Who she serves).
 - Services page: page title and intro.
-- Practice Areas (homepage section and page): the eight area names, each summary and its typical matters, drawn from the Blueprint's services.
+- Practice Areas (homepage section and page): the eight area names, each summary and its typical matters, drawn from the Blueprint's services; and which four show on the homepage.
 - Services: each service's one-line description (from the Blueprint), the longer description, "for whom" line and "how to start" text.
 - Contact: section title, intro, form title and text, and the message shown after sending.
 - Search results: the site description, page title and share text.
