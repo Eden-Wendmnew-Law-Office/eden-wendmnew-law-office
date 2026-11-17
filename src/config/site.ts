@@ -243,13 +243,17 @@ export const siteConfig = {
   social: {
     telegram: '', // Username only, without @ (also used by chat: 'telegram')
     whatsapp: '', // Number without + or spaces, e.g. '251911000000' (also used by chat: 'whatsapp')
-    facebook: '',
+    // Preview: icon shows now; Eden's page link to come (Biniam, 2026-11-17)
+    facebook: 'https://www.facebook.com/REPLACE_ME',
     instagram: '',
     linkedin: 'https://www.linkedin.com/in/edenwondu/',
     tiktok: '',
     youtube: '',
     x: '',
     xHandle: '', // e.g. '@brand' — used for Twitter/X cards
+    // Client custom (Eden): an email icon (mailto: contact.email) after the
+    // social icons in the footer and contact section
+    showEmail: true,
   },
 
   // ── Contact Form ────────────────────────────────────────────────────────────

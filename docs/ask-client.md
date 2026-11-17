@@ -9,6 +9,7 @@
 - About: licence details and year of licensing.
 - Contact: building name and which First Instance Court the office is near.
 - Contact: map. The Google Maps embed link (Share → Embed a map → the src URL) for pin 9.014277, 38.705372. The map is hidden until it is added.
+- Contact: her Facebook page link. The icon shows now with a placeholder link.
 - Contact: WhatsApp or Telegram number, and whether she wants a chat button.
 - Contact: second main action. Version 1 uses the phone number (call) beside the form.
 - Contact: booking link, if she uses one. None in version 1.

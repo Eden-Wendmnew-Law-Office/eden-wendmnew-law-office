@@ -11,9 +11,9 @@ finished (`- [x] … — YYYY-MM-DD`) and rewrites Current state.
 ## Current state
 
 - **Stage:** 1. Prepare
-- **Last done:** Biniam's review fixes: one section color, contact form shown, favicon, About illustration, fewer homepage practice areas — 2026-11-17
+- **Last done:** Facebook and email icons; solid scrolled navbar — 2026-11-17
 - **Next task:** 4. click-through, then Vercel preview
-- **Waiting on:** Biniam: click-through; task 1 (kickoff call) not yet confirmed
+- **Waiting on:** Biniam: CTA title choice; click-through; Facebook link; task 1 (kickoff call) not yet confirmed
 - **Blockers:** none
 
 ## Project
@@ -102,6 +102,7 @@ work): one line each, with the quote reference, e.g.
 - [x] Practice Areas, round 2: homepage shows the 4 featured areas (`featured: true`) + button to the page; navbar and footer link to `/#practice-areas` — 2026-11-17
 - [x] About illustration: Lady Justice from the logo, in the accent color, in the hero's arch (`ABOUT_SUMMARY.illustration`) — 2026-11-17
 - [x] Favicon: white logo on navy with a thin accent frame — 2026-11-17
+- [x] Social icons: LinkedIn, Facebook (link to come), email in footer and contact section; navbar solid navy when scrolled — 2026-11-17
 
 ## Approvals and revisions
 
@@ -126,6 +127,8 @@ a declined request, a value outside an allowed list).
 | 2026-11-17 | Light mode stays warm cream; every section uses the page color (no second section shade)                   | Biniam: consistency                                                                                                                 |
 | 2026-11-17 | Contact form shown in the preview with the placeholder key; sending works once Eden's Web3Forms key is set | Biniam                                                                                                                              |
 | 2026-11-17 | Homepage practice areas: Corporate and Commercial Law, Foreign Investment, Contract Law, Civil Litigation  | Biniam asked for the main ones only; Claude picked by the Blueprint's goal (business owners, investors; individuals via court work) |
+| 2026-11-17 | Facebook icon shown with a placeholder link until Eden's page is known; check:placeholders lists it        | Biniam                                                                                                                              |
+| 2026-11-17 | Scrolled navbar is solid navy, not 95%                                                                     | Biniam: page text showed through                                                                                                    |
 | 2026-11-17 | All colors, fonts and card styles come from site.ts and the shared components, never set per page          | Biniam: consistency                                                                                                                 |
 
 ## Handoff record

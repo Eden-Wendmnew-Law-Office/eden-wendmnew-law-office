@@ -1,6 +1,9 @@
 import { siteConfig } from '@/config/site';
 import { socialLinks } from '@/components/social-links';
 
+/** Profile pages only (the email icon's mailto: link is not a profile) */
+const profileUrls = socialLinks.map((link) => link.href).filter((href) => href.startsWith('http'));
+
 interface OrganizationSchemaProps {
   siteUrl: string;
 }
@@ -38,7 +41,7 @@ export function OrganizationSchema({ siteUrl }: OrganizationSchemaProps) {
         availableLanguage: schema.availableLanguage,
       },
     }),
-    ...(socialLinks.length > 0 && { sameAs: socialLinks.map((link) => link.href) }),
+    ...(profileUrls.length > 0 && { sameAs: profileUrls }),
     ...(schema.areaServed.length > 0 && {
       areaServed: schema.areaServed.map((name) => ({ '@type': 'Place', name })),
     }),
