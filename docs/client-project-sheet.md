@@ -11,7 +11,7 @@ finished (`- [x] … — YYYY-MM-DD`) and rewrites Current state.
 ## Current state
 
 - **Stage:** 1. Prepare
-- **Last done:** CTA title set to "Book a consultation with Eden" — 2026-11-17
+- **Last done:** branded share image — 2026-11-17
 - **Next task:** 4. click-through, then Vercel preview
 - **Waiting on:** Biniam: click-through; Facebook link; task 1 (kickoff call) not yet confirmed
 - **Blockers:** none
@@ -103,6 +103,7 @@ work): one line each, with the quote reference, e.g.
 - [x] About illustration: Lady Justice from the logo, in the accent color, in the hero's arch (`ABOUT_SUMMARY.illustration`) — 2026-11-17
 - [x] Favicon: white logo on navy with a thin accent frame — 2026-11-17
 - [x] Social icons: LinkedIn, Facebook (link to come), email in footer and contact section; navbar solid navy when scrolled — 2026-11-17
+- [x] Share image: branded 1200x630 `public/og-image.jpg` (navy, Lora name, portrait in the brass arch) for Telegram and WhatsApp previews — 2026-11-17
 
 ## Approvals and revisions
 
@@ -118,19 +119,20 @@ work): one line each, with the quote reference, e.g.
 Anything agreed that the Blueprint or package does not show (extra work quoted,
 a declined request, a value outside an allowed list).
 
-| Date       | Decision                                                                                                   | Reason                                                                                                                              |
-| ---------- | ---------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| 2026-11-17 | Dark mode uses the template's black surfaces, not brand.md's navy                                          | Biniam                                                                                                                              |
-| 2026-11-17 | Version 1 shows 3 clearly labelled sample testimonials; real quotes replace them before launch             | Biniam: Eden sees the section in the preview                                                                                        |
-| 2026-11-17 | Practice Areas gets its own page and homepage section; Services stays                                      | Biniam: a fuller homepage                                                                                                           |
-| 2026-11-17 | Logo cropped to the figure from Logo 2; navy on light, white on navy; same drawing, not redrawn            | Biniam                                                                                                                              |
-| 2026-11-17 | Light mode stays warm cream; every section uses the page color (no second section shade)                   | Biniam: consistency                                                                                                                 |
-| 2026-11-17 | Contact form shown in the preview with the placeholder key; sending works once Eden's Web3Forms key is set | Biniam                                                                                                                              |
-| 2026-11-17 | Homepage practice areas: Corporate and Commercial Law, Foreign Investment, Contract Law, Civil Litigation  | Biniam asked for the main ones only; Claude picked by the Blueprint's goal (business owners, investors; individuals via court work) |
-| 2026-11-17 | Facebook icon shown with a placeholder link until Eden's page is known; check:placeholders lists it        | Biniam                                                                                                                              |
-| 2026-11-17 | Scrolled navbar is solid navy, not 95%                                                                     | Biniam: page text showed through                                                                                                    |
-| 2026-11-17 | Closing call-to-action title: "Book a consultation with Eden"                                              | Biniam                                                                                                                              |
-| 2026-11-17 | All colors, fonts and card styles come from site.ts and the shared components, never set per page          | Biniam: consistency                                                                                                                 |
+| Date       | Decision                                                                                                                                     | Reason                                                                                                                              |
+| ---------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| 2026-11-17 | Dark mode uses the template's black surfaces, not brand.md's navy                                                                            | Biniam                                                                                                                              |
+| 2026-11-17 | Version 1 shows 3 clearly labelled sample testimonials; real quotes replace them before launch                                               | Biniam: Eden sees the section in the preview                                                                                        |
+| 2026-11-17 | Practice Areas gets its own page and homepage section; Services stays                                                                        | Biniam: a fuller homepage                                                                                                           |
+| 2026-11-17 | Logo cropped to the figure from Logo 2; navy on light, white on navy; same drawing, not redrawn                                              | Biniam                                                                                                                              |
+| 2026-11-17 | Light mode stays warm cream; every section uses the page color (no second section shade)                                                     | Biniam: consistency                                                                                                                 |
+| 2026-11-17 | Contact form shown in the preview with the placeholder key; sending works once Eden's Web3Forms key is set                                   | Biniam                                                                                                                              |
+| 2026-11-17 | Homepage practice areas: Corporate and Commercial Law, Foreign Investment, Contract Law, Civil Litigation                                    | Biniam asked for the main ones only; Claude picked by the Blueprint's goal (business owners, investors; individuals via court work) |
+| 2026-11-17 | Facebook icon shown with a placeholder link until Eden's page is known; check:placeholders lists it                                          | Biniam                                                                                                                              |
+| 2026-11-17 | Scrolled navbar is solid navy, not 95%                                                                                                       | Biniam: page text showed through                                                                                                    |
+| 2026-11-17 | Closing call-to-action title: "Book a consultation with Eden"                                                                                | Biniam                                                                                                                              |
+| 2026-11-17 | Custom share image replaces the generated one; on Vercel, NEXT_PUBLIC_SITE_URL must be the vercel.app address or link previews show no image | Biniam asked for a branded preview                                                                                                  |
+| 2026-11-17 | All colors, fonts and card styles come from site.ts and the shared components, never set per page                                            | Biniam: consistency                                                                                                                 |
 
 ## Handoff record
 

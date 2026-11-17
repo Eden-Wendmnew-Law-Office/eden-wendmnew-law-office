@@ -291,8 +291,10 @@ export const siteConfig = {
       'Legal work for foreign investors, business owners and individuals in Ethiopia, handled by Eden Wendmnew herself.',
     // '/og-default.png' is generated from the logo, name and tagline. For a custom
     // 1200×630 image, put it in public/ and set its path here, e.g. '/og-image.png'.
-    ogImage: '/og-default.png',
-    ogImageAlt: 'Eden Wendmnew Law Office',
+    // Branded share image (Telegram, WhatsApp, LinkedIn): navy, Lora name,
+    // portrait in the brass arch. Rendered from the site's own fonts, 1200x630.
+    ogImage: '/og-image.jpg',
+    ogImageAlt: 'Eden Wendmnew Law Office, Attorney and Consultant at Law, Addis Ababa',
   },
 
   // ── JSON-LD Structured Data ─────────────────────────────────────────────────
