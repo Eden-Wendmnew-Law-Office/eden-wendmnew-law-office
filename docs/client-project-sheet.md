@@ -11,9 +11,13 @@ finished (`- [x] … — YYYY-MM-DD`) and rewrites Current state.
 ## Current state
 
 - **Stage:** 2. Build and review — surprise test site, no agreement yet (tasks 0–2 wait for Eden's yes)
-- **Last done:** click-through on dev server, desktop 1366 and phone 390 — 2026-11-17. All pages 200, 404 works, every navbar/footer/section link resolves, no sideways scroll on phone, phone menu opens, images load with alt text, favicon and share image set, no console errors. Skipped as expected for the preview: form sending (placeholder key), map (hidden), `reviewed: true`. Dark mode checked by computed colors and `check:contrast`, not by screenshot. Found: navbar name truncates to "Eden Wendmnew La…" on phone and tablet (template behaviour, fix needs a component change); phone shows as +251941515310 without spaces (left as is). Then: navbar shows "Eden Wendmnew" below 1280 px, full name above; About glow removed below 1024 px — 2026-11-17. Version 1 content and design done
-- **Next task:** 4. send the surprise message (Version 1). Vercel `NEXT_PUBLIC_SITE_URL` set; share image, canonical and sitemap use the vercel.app address (checked 2026-11-17). Hero measured on the live preview at 360x640, 375x667, 390x844, 430x932, 768x1024, 1024x768, 1280x720, 1366x768, 1920x1080: text and both buttons in the first screen everywhere, no sideways scroll. Weak spot: phone turned sideways (844x390) shows only the 72 px title in the first screen
-- **Waiting on:** Biniam: decision on the sideways-phone hero, then the surprise message
+- **Last done:** Version 1 accepted by Biniam and live on the Vercel preview — 2026-11-17
+  - Click-through (dev server, 1366 and 390 px): all pages 200, 404 works, every navbar, footer and section link resolves, no sideways scroll, phone menu opens, images load with alt text, favicon and share image set, no console errors. Dark mode checked by computed colors and `check:contrast`, not by screenshot. Skipped for the preview: form sending (placeholder key), map (hidden), `reviewed: true`.
+  - Fixes after it: navbar shows "Eden Wendmnew" below 1280 px; About glow only from 1024 px up.
+  - Vercel: `NEXT_PUBLIC_SITE_URL` set; share image, canonical and sitemap use the vercel.app address.
+  - Hero measured on the live preview at 360x640, 375x667, 390x844, 430x932, 768x1024, 1024x768, 1280x720, 1366x768 and 1920x1080: text and both buttons in the first screen, no sideways scroll. Sideways phone (844x390) shows only the title first; left as is.
+- **Next task:** 4. send the surprise message (Version 1), then tick task 4 and the Version 1 message. Changes wait for Eden's response
+- **Waiting on:** Biniam: send the surprise message
 - **Blockers:** none
 
 ## Project
@@ -53,6 +57,7 @@ first group with an unticked task.
 **Stage 2 — Build and review**
 
 - [ ] 4. Version 1 built (`/aksumite-template`), click-through done, preview sent
+     — built, click-through done and preview live 2026-11-17; not yet sent
 - [x] Custom work below built and ticked (skip if none) — 2026-11-17
 - [ ] 5. Review call held, Website Review sent
 - [ ] 6. Revisions applied (logged below); client wrote **Approved**; legal
