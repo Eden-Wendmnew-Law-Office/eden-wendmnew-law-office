@@ -11,9 +11,9 @@ finished (`- [x] … — YYYY-MM-DD`) and rewrites Current state.
 ## Current state
 
 - **Stage:** 1. Prepare
-- **Last done:** setup finished; GitHub repository added and pushed — 2026-11-17
-- **Next task:** build version 1 (/aksumite-template), starting with images
-- **Waiting on:** Biniam to start the build; task 1 (kickoff call) not yet confirmed
+- **Last done:** version 1 built; checks pass; ask-client list saved — 2026-11-17
+- **Next task:** 4. click-through, then Vercel preview; then Custom work (arched hero)
+- **Waiting on:** click-through and preview (Biniam); task 1 (kickoff call) not yet confirmed
 - **Blockers:** none
 
 ## Project
@@ -74,8 +74,8 @@ A ticked line is never generated again, so the client's corrections are safe.
 - [x] `.env.local` set — 2026-11-17 (localhost until the domain is decided)
 - [x] Fonts pinned and files formatted — 2026-11-17
 - [x] Checks pass — 2026-11-17
-- [ ] `docs/ask-client.md` saved
-- [ ] Pushed and reported
+- [x] `docs/ask-client.md` saved — 2026-11-17
+- [x] Pushed and reported — 2026-11-17
 
 ## Messages
 
