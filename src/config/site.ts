@@ -69,9 +69,35 @@ interface NavLink {
 // After changing colors, run `npm run check:contrast`.
 const brand: BrandSettings = {
   preset: 'corporate',
-  colors: {},
-  surfaces: { light: {}, dark: {} },
-  fonts: {},
+  colors: {
+    primary: '#1B2A44',
+    primaryDark: '#121D31',
+    primaryLight: '#33456A',
+    accent: '#C9A25E',
+    accentDark: '#9C7B3A',
+    onAccent: '#152036',
+  },
+  surfaces: {
+    light: {
+      page: '#F8F6F1',
+      section: '#EEEAE1',
+      card: '#FFFFFF',
+      border: '#DCD6CA',
+      heading: '#152036',
+      body: '#2F3542',
+      muted: '#5F6573',
+    },
+    dark: {
+      page: '#0E1626',
+      section: '#131D30',
+      card: '#1A263C',
+      border: '#2A3852',
+      heading: '#F3F1EC',
+      body: '#D6D9E0',
+      muted: '#A3AAB8',
+    },
+  },
+  fonts: { body: 'DM Sans', heading: 'Lora' },
   shape: {},
 };
 
@@ -88,16 +114,7 @@ export const siteConfig = {
   // The order here is the order on the homepage. Remove an id to hide that
   // section; nav and footer links pointing at it hide too. Projects, partners,
   // testimonials and services also hide on their own when their data is empty.
-  homeSections: [
-    'hero',
-    'about',
-    'services',
-    'projects',
-    'partners',
-    'testimonials',
-    'contact',
-    'cta',
-  ] as HomeSectionId[],
+  homeSections: ['hero', 'about', 'services', 'testimonials', 'contact', 'cta'] as HomeSectionId[],
 
   // ── Hero Layout ─────────────────────────────────────────────────────────────
   // 'gradient' → animated gradient on the primary color, no photo (default;
@@ -130,7 +147,6 @@ export const siteConfig = {
       { href: '/', label: 'Home' },
       { href: '/#about', label: 'About', section: 'about' },
       { href: '/#services', label: 'Services', section: 'services' },
-      { href: '/#projects', label: 'Projects', section: 'projects' },
       { href: '/#testimonials', label: 'Testimonials', section: 'testimonials' },
       { href: '/#contact', label: 'Contact', section: 'contact' },
     ] as NavLink[],
@@ -138,7 +154,7 @@ export const siteConfig = {
       { href: '/', label: 'Home' },
       { href: '/#about', label: 'About', section: 'about' },
       { href: '/#services', label: 'Services', section: 'services' },
-      { href: '/#projects', label: 'Projects', section: 'projects' },
+      { href: '/#contact', label: 'Contact', section: 'contact' },
     ] as NavLink[],
     // The header button is the primary conversion action (see `conversion`)
   },
@@ -168,7 +184,7 @@ export const siteConfig = {
   // embedded calendar script. No tool yet: Google Calendar booking page for
   // Gmail users, otherwise Cal.com.
   booking: {
-    url: 'https://cal.com/yourusername',
+    url: '',
   },
 
   // ── Chat Button ─────────────────────────────────────────────────────────────
@@ -177,14 +193,15 @@ export const siteConfig = {
   chat: 'none' as ChatChannel,
 
   // ── Brand Identity ──────────────────────────────────────────────────────────
-  name: 'Brand Name',
-  tagline: 'Your tagline here',
-  description: 'Your company description goes here.',
+  name: 'Eden Wendmnew Law Office',
+  tagline: 'Attorney and Consultant at Law',
+  description:
+    'Eden Wendmnew is an Attorney and Consultant at Law in Addis Ababa. She advises foreign investors and business owners on company formation, investment, trademarks, contracts and compliance, and represents clients at all levels of Federal Courts.',
   url: process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000',
   // Path under public/, e.g. '/logo.png' — used in navbar, footer, icons and
   // structured data. Empty = no logo yet: the name shows as text.
-  logo: '',
-  logoAlt: 'Brand Name Logo',
+  logo: '/logo.jpg',
+  logoAlt: 'Eden Wendmnew Law Office logo',
   // Navbar and footer: 'icon' → a square mark in a small box with the name
   // beside it; 'wide' → a wordmark (logo with the name in it) shown alone,
   // 32px high
@@ -198,12 +215,12 @@ export const siteConfig = {
 
   // ── Contact Details ─────────────────────────────────────────────────────────
   contact: {
-    email: 'hello@example.com',
-    phone: '+15555550100', // International format, e.g. '+251911000000'
-    address: '123 Main St, City, Country',
-    officeHours: 'Mon–Fri, 9:00 AM – 5:00 PM',
+    email: 'edenwendmnew2@gmail.com',
+    phone: '+251941515310', // International format, e.g. '+251911000000'
+    address: 'Near the First Instance Court, Kolfe Keranio, Addis Ababa, Ethiopia',
+    officeHours: 'Mon–Fri, 8:00 AM – 5:00 PM',
     // Google Maps → Share → Embed a map → copy only the src="..." URL
-    mapEmbedUrl: '',
+    mapEmbedUrl: 'https://maps.google.com/maps?q=9.014277,38.705372&z=17&output=embed',
     // Default country for the phone field in the contact form (ISO code)
     defaultPhoneCountry: 'ET',
     // Contact people shown in the contact section instead of the single
@@ -216,11 +233,11 @@ export const siteConfig = {
   // ── Social Links ────────────────────────────────────────────────────────────
   // Leave any value empty to hide it.
   social: {
-    telegram: 'yourusername', // Username only, without @ (also used by chat: 'telegram')
-    whatsapp: '15555550100', // Number without + or spaces, e.g. '251911000000' (also used by chat: 'whatsapp')
-    facebook: 'https://facebook.com/yourusername',
-    instagram: 'https://instagram.com/yourusername',
-    linkedin: 'https://linkedin.com/company/yourusername',
+    telegram: '', // Username only, without @ (also used by chat: 'telegram')
+    whatsapp: '', // Number without + or spaces, e.g. '251911000000' (also used by chat: 'whatsapp')
+    facebook: '',
+    instagram: '',
+    linkedin: 'https://www.linkedin.com/in/edenwondu/',
     tiktok: '',
     youtube: '',
     x: '',
@@ -238,40 +255,56 @@ export const siteConfig = {
   // "Other" (labels in UI_TEXT.contact.form).
   contactForm: {
     provider: 'web3forms' as ContactFormProvider,
-    formKey: 'REPLACE_ME',
+    formKey: '',
   },
 
   // ── SEO & Open Graph ────────────────────────────────────────────────────────
   seo: {
-    titleDefault: 'Brand Name | Your Tagline',
-    titleTemplate: '%s | Brand Name',
-    metaDescription: 'Your homepage meta description goes here.',
-    keywords: [] as string[],
-    category: 'business',
-    ogTitle: 'Brand Name | Your Tagline',
-    ogDescription: 'Your Open Graph description goes here.',
+    titleDefault: 'Eden Wendmnew Law Office | Attorney and Consultant at Law, Addis Ababa',
+    titleTemplate: '%s | Eden Wendmnew Law Office',
+    metaDescription:
+      'Eden Wendmnew, Attorney and Consultant at Law in Addis Ababa. Company formation, investment consulting, trademark registration, contract drafting, regulatory compliance and court representation.',
+    keywords: [
+      'lawyer Addis Ababa',
+      'company formation Ethiopia',
+      'foreign investment Ethiopia',
+      'trademark registration Ethiopia',
+      'contract drafting',
+      'court representation Addis Ababa',
+    ] as string[],
+    category: 'legal',
+    ogTitle: 'Eden Wendmnew Law Office | Attorney and Consultant at Law',
+    ogDescription:
+      'Legal work for foreign investors, business owners and individuals in Ethiopia, handled by Eden Wendmnew herself.',
     // '/og-default.png' is generated from the logo, name and tagline. For a custom
     // 1200×630 image, put it in public/ and set its path here, e.g. '/og-image.png'.
     ogImage: '/og-default.png',
-    ogImageAlt: 'Brand Name',
+    ogImageAlt: 'Eden Wendmnew Law Office',
   },
 
   // ── JSON-LD Structured Data ─────────────────────────────────────────────────
   schema: {
     // Any schema.org business type, e.g. 'LocalBusiness', 'GeneralContractor', 'ChildCare'
-    type: 'LocalBusiness',
+    type: 'LegalService',
     alternateName: [] as string[],
     slogan: '',
-    areaServed: [] as string[],
+    areaServed: ['Addis Ababa', 'Ethiopia'] as string[],
     priceRange: '',
-    knowsAbout: [] as string[],
+    knowsAbout: [
+      'Company Formation',
+      'Investment Consulting',
+      'Trademark Registration',
+      'Contract Drafting',
+      'Regulatory Compliance',
+      'Court Representation',
+    ] as string[],
     availableLanguage: ['English'] as string[],
   },
 
   // ── Footer ──────────────────────────────────────────────────────────────────
   footer: {
-    description: 'Your company description goes here.',
-    copyrightEntity: 'Brand Name',
+    description: 'Attorney and Consultant at Law in Addis Ababa, at all levels of Federal Courts.',
+    copyrightEntity: 'Eden Wendmnew Law Office',
   },
 
   // ── Agency Credit ───────────────────────────────────────────────────────────
@@ -287,10 +320,10 @@ export const siteConfig = {
 
   // ── Legal Pages ─────────────────────────────────────────────────────────────
   legal: {
-    companyFullName: 'Brand Name',
-    jurisdiction: 'your jurisdiction',
-    courtLocation: 'your city, Country',
-    lastUpdated: 'January 2026',
+    companyFullName: 'Eden Wendmnew Law Office',
+    jurisdiction: 'the Federal Democratic Republic of Ethiopia',
+    courtLocation: 'Addis Ababa, Ethiopia',
+    lastUpdated: 'November 2026',
   },
 };
 
