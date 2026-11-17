@@ -10,10 +10,10 @@ finished (`- [x] … — YYYY-MM-DD`) and rewrites Current state.
 
 ## Current state
 
-- **Stage:** 1. Prepare
-- **Last done:** hero title and button sizes on phone and desktop — 2026-11-17
-- **Next task:** 4. click-through, then Vercel preview
-- **Waiting on:** Biniam: click-through; Facebook link; task 1 (kickoff call) not yet confirmed
+- **Stage:** 2. Build and review — surprise test site, no agreement yet (tasks 0–2 wait for Eden's yes)
+- **Last done:** sheet set to the surprise path — 2026-11-17
+- **Next task:** 4. click-through, then Vercel preview, then the surprise message (Version 1)
+- **Waiting on:** Biniam: click-through and Vercel preview
 - **Blockers:** none
 
 ## Project
@@ -30,7 +30,7 @@ finished (`- [x] … — YYYY-MM-DD`) and rewrites Current state.
 | GitHub repository          | https://github.com/Eden-Wendmnew-Law-Office/eden-wendmnew-law-office |
 | Logins stored at           |                                                                      |
 | PageSpeed (mobile/desktop) |                                                                      |
-| Host (Vercel / cPanel)     |                                                                      |
+| Host (Vercel / cPanel)     | Vercel                                                               |
 | Preview URL                |                                                                      |
 | Live URL                   |                                                                      |
 | Final payment (date)       |                                                                      |
@@ -42,10 +42,12 @@ first group with an unticked task.
 
 **Stage 1 — Prepare**
 
-- [x] 0. Proposal confirmed in writing or agreement signed; deposit paid; group
-     created — 2026-11-17
+- [ ] 0. Proposal confirmed in writing or agreement signed; deposit paid; group
+     created — after Eden's yes (surprise site)
 - [ ] 1. Kickoff call done, summary sent; logo and photos received or requested
-- [x] 2. Brand Guideline done (or `skipped`, which counts as done) — 2026-11-17
+     — after Eden's yes
+- [ ] 2. Brand Guideline done (or `skipped`, which counts as done) — not made
+     yet; research and decisions ready in `client/brand.md`; to do if she continues
 - [x] 3. Blueprint done — 2026-11-17
 
 **Stage 2 — Build and review**
@@ -81,7 +83,8 @@ A ticked line is never generated again, so the client's corrections are safe.
 
 Each is offered once, when its moment arrives, and ticked when it has been sent.
 
-- [ ] Version 1
+- [ ] Version 1 — the surprise message: preview link, samples and Facebook
+      placeholder explained
 - [ ] Website Review
 - [ ] Revisions applied, round 1
 - [ ] Revisions applied, round 2
@@ -135,6 +138,11 @@ a declined request, a value outside an allowed list).
 | 2026-11-17 | Closing call-to-action title: "Book a consultation with Eden"                                                                                | Biniam                                                                                                                              |
 | 2026-11-17 | Custom share image replaces the generated one; on Vercel, NEXT_PUBLIC_SITE_URL must be the vercel.app address or link previews show no image | Biniam asked for a branded preview                                                                                                  |
 | 2026-11-17 | All colors, fonts and card styles come from site.ts and the shared components, never set per page                                            | Biniam: consistency                                                                                                                 |
+| 2026-11-17 | Surprise website as a test: no proposal, kickoff, deposit or Brand Guideline until Eden likes it and wants to continue                       | Biniam: test with 2 businesses                                                                                                      |
+| 2026-11-17 | Facebook and other icons stay in the preview, Facebook with its placeholder link; Biniam tells Eden                                          | Biniam                                                                                                                              |
+| 2026-11-17 | Sample testimonials stay in the preview; Biniam tells Eden they are samples                                                                  | Biniam                                                                                                                              |
+| 2026-11-17 | Light and dark mode stay as built; colors (and keeping one or both modes) asked after her yes                                                | Biniam                                                                                                                              |
+| 2026-11-17 | Preview on Vercel (vercel.app address), no domain yet                                                                                        | Biniam                                                                                                                              |
 
 ## Handoff record
 
