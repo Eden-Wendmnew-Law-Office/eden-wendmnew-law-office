@@ -12,6 +12,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: pageUrl('/'), lastModified, changeFrequency: 'monthly', priority: 1 },
     { url: pageUrl('/about'), lastModified, changeFrequency: 'monthly', priority: 0.8 },
     { url: pageUrl('/services'), lastModified, changeFrequency: 'monthly', priority: 0.9 },
+    {
+      url: pageUrl('/practice-areas'),
+      lastModified,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
     { url: pageUrl('/projects'), lastModified, changeFrequency: 'monthly', priority: 0.8 },
     { url: pageUrl('/privacy-policy'), lastModified, changeFrequency: 'yearly', priority: 0.3 },
     { url: pageUrl('/terms-of-service'), lastModified, changeFrequency: 'yearly', priority: 0.3 },

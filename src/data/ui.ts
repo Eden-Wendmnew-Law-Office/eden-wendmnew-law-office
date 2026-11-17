@@ -16,6 +16,14 @@ export const UI_TEXT = {
     projects: 'Portfolio',
     testimonials: 'Testimonials',
     contact: 'Contact Us',
+    practiceAreas: 'Practice Areas',
+  },
+
+  /** Practice Areas section and page (client custom work) */
+  practiceAreas: {
+    viewAll: 'All practice areas',
+    mattersLabel: 'Typical matters',
+    relatedService: 'Related service:',
   },
 
   services: {

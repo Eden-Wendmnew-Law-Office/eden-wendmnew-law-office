@@ -11,9 +11,9 @@ finished (`- [x] … — YYYY-MM-DD`) and rewrites Current state.
 ## Current state
 
 - **Stage:** 1. Prepare
-- **Last done:** version 1 built; then sample testimonials shown and dark mode set to black — 2026-11-17
-- **Next task:** Custom work: arched hero (fixes headline size, buttons, portrait), Practice Areas, logo fix; then 4. click-through and preview
-- **Waiting on:** Biniam: yes to the Practice Areas plan; logo choice; light mode (cream or template white); task 1 not yet confirmed
+- **Last done:** Custom work built: arched hero, Practice Areas page and section, logo cropped (navy + white) — 2026-11-17
+- **Next task:** 4. click-through, then Vercel preview
+- **Waiting on:** Biniam: click-through; light mode cream (kept) or template white not yet confirmed; task 1 not yet confirmed
 - **Blockers:** none
 
 ## Project
@@ -51,7 +51,7 @@ first group with an unticked task.
 **Stage 2 — Build and review**
 
 - [ ] 4. Version 1 built (`/aksumite-template`), click-through done, preview sent
-- [ ] Custom work below built and ticked (skip if none)
+- [x] Custom work below built and ticked (skip if none) — 2026-11-17
 - [ ] 5. Review call held, Website Review sent
 - [ ] 6. Revisions applied (logged below); client wrote **Approved**; legal
      `reviewed: true`
@@ -97,7 +97,7 @@ work): one line each, with the quote reference, e.g.
 `- [ ] Equipment page + homepage section — quote Q-012`.
 
 - [x] Arched-frame hero: homepage hero, replacing the template layouts (navy gradient, portrait in a brass arch, per docs/brand-previews/hero-options.html) — quote: none, Digital Aksumite's own build — built 2026-11-17 (`hero.layout: 'arched'`)
-- [ ] Practice Areas: /practice-areas page + homepage section after About, links in navbar and footer; Services stay as they are — quote: none, Digital Aksumite's own build (plan to approve first)
+- [x] Practice Areas: /practice-areas page + homepage section after About, links in navbar and footer; Services stay as they are — quote: none, Digital Aksumite's own build — built 2026-11-17
 - [x] Logo fix: cropped to the figure; navy `logo.png` and white `logo-on-primary.png`, same drawing — 2026-11-17
 
 ## Approvals and revisions
@@ -119,6 +119,7 @@ a declined request, a value outside an allowed list).
 | 2026-11-17 | Dark mode uses the template's black surfaces, not brand.md's navy                                 | Biniam                                       |
 | 2026-11-17 | Version 1 shows 3 clearly labelled sample testimonials; real quotes replace them before launch    | Biniam: Eden sees the section in the preview |
 | 2026-11-17 | Practice Areas gets its own page and homepage section; Services stays                             | Biniam: a fuller homepage                    |
+| 2026-11-17 | Logo cropped to the figure from Logo 2; navy on light, white on navy; same drawing, not redrawn   | Biniam                                       |
 | 2026-11-17 | All colors, fonts and card styles come from site.ts and the shared components, never set per page | Biniam: consistency                          |
 
 ## Handoff record

@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { Hero } from '@/components/hero';
 import { AboutSection } from '@/components/about-section';
 import { ServicesSection } from '@/components/services-section';
+import { PracticeAreasSection } from '@/components/practice-areas-section';
 import { ProjectsSection } from '@/components/projects-section';
 import { PartnersSection } from '@/components/partners-section';
 import { TestimonialsSection } from '@/components/testimonials-section';
@@ -13,6 +14,7 @@ import type { HomeSectionId } from '@/config/site';
 import { HOME_PAGE } from '@/data/home';
 import { ABOUT_SUMMARY } from '@/data/about';
 import { SERVICES } from '@/data/services';
+import { PRACTICE_AREAS } from '@/data/practice-areas';
 import { FEATURED_PROJECTS } from '@/data/projects';
 import { PARTNERS } from '@/data/partners';
 import { TESTIMONIALS } from '@/data/testimonials';
@@ -25,6 +27,16 @@ export const metadata: Metadata = withCanonical({}, '/');
 const SECTIONS = new Map<HomeSectionId, () => ReactNode>([
   ['hero', () => <Hero homePage={HOME_PAGE} />],
   ['about', () => <AboutSection about={ABOUT_SUMMARY} />],
+  [
+    'practice-areas',
+    () => (
+      <PracticeAreasSection
+        title={HOME_PAGE.practiceAreasTitle}
+        subtitle={HOME_PAGE.practiceAreasSubtitle}
+        areas={PRACTICE_AREAS}
+      />
+    ),
+  ],
   [
     'services',
     () => (

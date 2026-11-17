@@ -30,6 +30,7 @@ import { PROJECTS, PROJECTS_PAGE } from '../src/data/projects.ts';
 import { TESTIMONIALS } from '../src/data/testimonials.ts';
 import { PARTNERS } from '../src/data/partners.ts';
 import { CONTACT_PAGE } from '../src/data/contact.ts';
+import { PRACTICE_AREAS, PRACTICE_AREAS_PAGE } from '../src/data/practice-areas.ts';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 
@@ -164,6 +165,23 @@ const contentSchemas = [
   ['testimonials.ts', z.array(z.object({ quote: text, clientName: text })), TESTIMONIALS],
   ['partners.ts', z.array(z.object({ name: text, url: optional(url).optional() })), PARTNERS],
   ['contact.ts', z.object({ title: text, description: text }), CONTACT_PAGE],
+  // Client custom work (Eden Wendmnew)
+  [
+    'practice-areas.ts',
+    z.object({
+      page: z.object({ meta: pageMeta }),
+      areas: z.array(
+        z.object({
+          title: text,
+          slug,
+          summary: text,
+          matters: z.array(text),
+          serviceSlug: z.enum(SERVICES.map((service) => service.slug)),
+        })
+      ),
+    }),
+    { page: PRACTICE_AREAS_PAGE, areas: PRACTICE_AREAS },
+  ],
 ];
 
 const problems = [];
@@ -194,6 +212,11 @@ checkUnique(
   'projects.ts',
   'slug',
   PROJECTS.map((project) => project.slug)
+);
+checkUnique(
+  'practice-areas.ts',
+  'slug',
+  PRACTICE_AREAS.map((area) => area.slug)
 );
 checkUnique('site.ts', 'homeSections id', siteConfig.homeSections);
 

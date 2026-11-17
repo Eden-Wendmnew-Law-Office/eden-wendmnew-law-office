@@ -59,6 +59,27 @@ export interface Service {
   ctaText: string;
 }
 
+/** Client custom work (Eden Wendmnew): an area of law, linked to the service that covers it */
+export interface PracticeArea {
+  title: string;
+  slug: string;
+  /** One or two sentences, shown on the homepage and the page */
+  summary: string;
+  /** Typical matters, shown on /practice-areas */
+  matters: string[];
+  /** Slug of the related service in src/data/services.ts */
+  serviceSlug: string;
+}
+
+export interface PracticeAreasPage {
+  meta: PageMeta;
+  eyebrow: string;
+  title: string;
+  description: string;
+  sectionTitle: string;
+  sectionSubtitle: string;
+}
+
 export interface HomePage {
   /** 1 to 3 lines; each line is shown on its own row */
   heroTitleLines: [string] | [string, string] | [string, string, string];
@@ -70,6 +91,8 @@ export interface HomePage {
   heroSecondaryButtonUrl: string;
   servicesTitle: string;
   servicesSubtitle: string;
+  practiceAreasTitle: string;
+  practiceAreasSubtitle: string;
   projectsTitle: string;
   projectsSubtitle: string;
   partnersTitle: string;

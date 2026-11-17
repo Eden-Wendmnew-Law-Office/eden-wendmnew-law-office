@@ -40,6 +40,7 @@ export interface ContactPerson {
 export type HomeSectionId =
   | 'hero'
   | 'about'
+  | 'practice-areas'
   | 'services'
   | 'projects'
   | 'partners'
@@ -107,7 +108,15 @@ export const siteConfig = {
   // The order here is the order on the homepage. Remove an id to hide that
   // section; nav and footer links pointing at it hide too. Projects, partners,
   // testimonials and services also hide on their own when their data is empty.
-  homeSections: ['hero', 'about', 'services', 'testimonials', 'contact', 'cta'] as HomeSectionId[],
+  homeSections: [
+    'hero',
+    'about',
+    'practice-areas',
+    'services',
+    'testimonials',
+    'contact',
+    'cta',
+  ] as HomeSectionId[],
 
   // ── Hero Layout ─────────────────────────────────────────────────────────────
   // 'gradient' → animated gradient on the primary color, no photo (default;
@@ -144,6 +153,7 @@ export const siteConfig = {
     desktop: [
       { href: '/', label: 'Home' },
       { href: '/#about', label: 'About', section: 'about' },
+      { href: '/practice-areas', label: 'Practice Areas' },
       { href: '/#services', label: 'Services', section: 'services' },
       { href: '/#testimonials', label: 'Testimonials', section: 'testimonials' },
       { href: '/#contact', label: 'Contact', section: 'contact' },
@@ -151,8 +161,8 @@ export const siteConfig = {
     tablet: [
       { href: '/', label: 'Home' },
       { href: '/#about', label: 'About', section: 'about' },
+      { href: '/practice-areas', label: 'Practice Areas' },
       { href: '/#services', label: 'Services', section: 'services' },
-      { href: '/#contact', label: 'Contact', section: 'contact' },
     ] as NavLink[],
     // The header button is the primary conversion action (see `conversion`)
   },
