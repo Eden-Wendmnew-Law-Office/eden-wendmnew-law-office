@@ -20,10 +20,12 @@ const MIME_TYPES: Record<string, string> = {
 
 const colors = resolveBrand(siteConfig.brand).colors;
 
+/** Both images sit on the primary color, so the light logo (logoOnPrimary) wins when set. */
 async function logoDataUrl(): Promise<string | undefined> {
-  if (!siteConfig.logo) return undefined;
-  const file = await readFile(join(process.cwd(), 'public', siteConfig.logo));
-  const type = MIME_TYPES[extname(siteConfig.logo).toLowerCase()] ?? 'image/png';
+  const logoPath = siteConfig.logoOnPrimary || siteConfig.logo;
+  if (!logoPath) return undefined;
+  const file = await readFile(join(process.cwd(), 'public', logoPath));
+  const type = MIME_TYPES[extname(logoPath).toLowerCase()] ?? 'image/png';
   return `data:${type};base64,${file.toString('base64')}`;
 }
 
@@ -40,7 +42,7 @@ async function imageOptions() {
 export async function iconResponse(size: number, radius: number): Promise<ImageResponse> {
   const logo = await logoDataUrl();
   const options = await imageOptions();
-  const logoSize = Math.round(size * 0.72);
+  const logoSize = Math.round(size * 0.78);
 
   return new ImageResponse(
     <div
@@ -52,6 +54,11 @@ export async function iconResponse(size: number, radius: number): Promise<ImageR
         justifyContent: 'center',
         background: colors.primary,
         borderRadius: radius,
+        // Thin accent frame, as around the navbar logo; not on the Apple icon
+        // (radius 0), whose corners the phone rounds and would cut
+        border: radius
+          ? `${Math.max(2, Math.round(size * 0.03))}px solid ${colors.accent}`
+          : 'none',
       }}
     >
       {logo ? (

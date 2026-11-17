@@ -81,7 +81,7 @@ const brand: BrandSettings = {
   surfaces: {
     light: {
       page: '#F8F6F1',
-      section: '#EEEAE1',
+      section: '#F8F6F1', // = page: one background on every section (Biniam, 2026-11-17)
       card: '#FFFFFF',
       border: '#DCD6CA',
       heading: '#152036',
@@ -263,7 +263,8 @@ export const siteConfig = {
   // "Other" (labels in UI_TEXT.contact.form).
   contactForm: {
     provider: 'web3forms' as ContactFormProvider,
-    formKey: '',
+    // Preview: placeholder so the form shows; sending works once Eden's own key is set
+    formKey: 'REPLACE_ME',
   },
 
   // ── SEO & Open Graph ────────────────────────────────────────────────────────
