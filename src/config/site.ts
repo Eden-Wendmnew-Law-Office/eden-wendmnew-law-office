@@ -87,15 +87,8 @@ const brand: BrandSettings = {
       body: '#2F3542',
       muted: '#5F6573',
     },
-    dark: {
-      page: '#0E1626',
-      section: '#131D30',
-      card: '#1A263C',
-      border: '#2A3852',
-      heading: '#F3F1EC',
-      body: '#D6D9E0',
-      muted: '#A3AAB8',
-    },
+    // Dark mode: the template's black surfaces (Biniam, 2026-11-17)
+    dark: {},
   },
   fonts: { body: 'DM Sans', heading: 'Lora' },
   shape: {},
