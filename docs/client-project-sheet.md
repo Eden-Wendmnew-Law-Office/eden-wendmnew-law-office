@@ -11,29 +11,29 @@ finished (`- [x] … — YYYY-MM-DD`) and rewrites Current state.
 ## Current state
 
 - **Stage:** 1. Prepare
-- **Last done:** setup: git, `client:init` from v1.6.0, sheet filled — 2026-11-17
-- **Next task:** add the GitHub repository, then build version 1 (/aksumite-template)
-- **Waiting on:** Biniam: empty private GitHub repository link; task 1 (kickoff call) not yet confirmed
+- **Last done:** setup finished; GitHub repository added and pushed — 2026-11-17
+- **Next task:** build version 1 (/aksumite-template), starting with images
+- **Waiting on:** Biniam to start the build; task 1 (kickoff call) not yet confirmed
 - **Blockers:** none
 
 ## Project
 
-| Field                      | Value                    |
-| -------------------------- | ------------------------ |
-| Client                     | Eden Wendmnew Law Office |
-| Client slug                | eden-wendmnew-law-office |
-| Package                    | Digital Presence         |
-| Template version (tag)     | v1.6.0                   |
-| Deposit paid (date)        |                          |
-| Group (Telegram/WhatsApp)  |                          |
-| Decision maker             |                          |
-| GitHub repository          |                          |
-| Logins stored at           |                          |
-| PageSpeed (mobile/desktop) |                          |
-| Host (Vercel / cPanel)     |                          |
-| Preview URL                |                          |
-| Live URL                   |                          |
-| Final payment (date)       |                          |
+| Field                      | Value                                                                |
+| -------------------------- | -------------------------------------------------------------------- |
+| Client                     | Eden Wendmnew Law Office                                             |
+| Client slug                | eden-wendmnew-law-office                                             |
+| Package                    | Digital Presence                                                     |
+| Template version (tag)     | v1.6.0                                                               |
+| Deposit paid (date)        |                                                                      |
+| Group (Telegram/WhatsApp)  |                                                                      |
+| Decision maker             |                                                                      |
+| GitHub repository          | https://github.com/Eden-Wendmnew-Law-Office/eden-wendmnew-law-office |
+| Logins stored at           |                                                                      |
+| PageSpeed (mobile/desktop) |                                                                      |
+| Host (Vercel / cPanel)     |                                                                      |
+| Preview URL                |                                                                      |
+| Live URL                   |                                                                      |
+| Final payment (date)       |                                                                      |
 
 ## Tasks
 
