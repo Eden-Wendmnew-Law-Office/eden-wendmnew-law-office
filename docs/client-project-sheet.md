@@ -11,9 +11,9 @@ finished (`- [x] … — YYYY-MM-DD`) and rewrites Current state.
 ## Current state
 
 - **Stage:** 1. Prepare
-- **Last done:** Facebook and email icons; solid scrolled navbar — 2026-11-17
+- **Last done:** CTA title set to "Book a consultation with Eden" — 2026-11-17
 - **Next task:** 4. click-through, then Vercel preview
-- **Waiting on:** Biniam: CTA title choice; click-through; Facebook link; task 1 (kickoff call) not yet confirmed
+- **Waiting on:** Biniam: click-through; Facebook link; task 1 (kickoff call) not yet confirmed
 - **Blockers:** none
 
 ## Project
@@ -129,6 +129,7 @@ a declined request, a value outside an allowed list).
 | 2026-11-17 | Homepage practice areas: Corporate and Commercial Law, Foreign Investment, Contract Law, Civil Litigation  | Biniam asked for the main ones only; Claude picked by the Blueprint's goal (business owners, investors; individuals via court work) |
 | 2026-11-17 | Facebook icon shown with a placeholder link until Eden's page is known; check:placeholders lists it        | Biniam                                                                                                                              |
 | 2026-11-17 | Scrolled navbar is solid navy, not 95%                                                                     | Biniam: page text showed through                                                                                                    |
+| 2026-11-17 | Closing call-to-action title: "Book a consultation with Eden"                                              | Biniam                                                                                                                              |
 | 2026-11-17 | All colors, fonts and card styles come from site.ts and the shared components, never set per page          | Biniam: consistency                                                                                                                 |
 
 ## Handoff record

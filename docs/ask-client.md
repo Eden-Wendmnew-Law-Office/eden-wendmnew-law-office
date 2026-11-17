@@ -25,7 +25,7 @@
 ## Drafted text to confirm
 
 - Homepage, hero: headline "Business and investment law in Addis Ababa" and the line under it.
-- Homepage: services intro, testimonials heading, and the closing call to action ("Tell Eden about your matter").
+- Homepage: services intro, testimonials heading, and the closing call to action ("Book a consultation with Eden").
 - Homepage, About: the summary paragraph, including "In 2026 she opened her own office".
 - About page: every section (Who she is, What she does, Background, How she works, Who she serves).
 - Services page: page title and intro.

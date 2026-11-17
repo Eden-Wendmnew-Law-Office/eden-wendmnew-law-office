@@ -24,7 +24,7 @@ export const HOME_PAGE: HomePage = {
   testimonialsTitle: 'What clients say',
   testimonialsSubtitle: 'From clients of Eden Wendmnew Law Office.',
 
-  ctaTitle: 'Tell Eden about your matter',
+  ctaTitle: 'Book a consultation with Eden',
   ctaSubtitle:
     'Send a short description through the form, or call during office hours: Monday to Friday, 8:00 AM to 5:00 PM.',
   ctaSecondaryButtonText: 'Our services',
