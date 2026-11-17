@@ -65,12 +65,19 @@ function ArchedHero({ homePage, settings }: PhotoHeroProps) {
   return (
     <section className="from-brand-primary to-brand-primary-dark relative overflow-hidden bg-gradient-to-br">
       <Container className="relative z-10">
-        <div className="grid grid-cols-1 items-center gap-10 pt-28 pb-14 md:pt-32 md:pb-20 lg:min-h-[100svh] lg:grid-cols-[minmax(0,1.25fr)_minmax(0,0.75fr)] lg:gap-16 lg:py-28">
-          <HeroText homePage={homePage} eyebrow={siteConfig.tagline} size="compact" />
+        <div className="grid grid-cols-1 items-center pb-16 md:pb-24 lg:min-h-[100svh] lg:grid-cols-[minmax(0,1.25fr)_minmax(0,0.75fr)] lg:gap-16 lg:py-28">
+          {/* Phones and tablets: the text fills the first screen, centred
+              under the navbar; the portrait comes into view on scrolling */}
+          <HeroText
+            homePage={homePage}
+            eyebrow={siteConfig.tagline}
+            size="compact"
+            className="min-h-[100svh] justify-center pt-24 pb-12 md:pt-28 lg:min-h-0 lg:p-0"
+          />
 
           <div
             style={fadeDelay(homePage.heroTitleLines.length + 2)}
-            className="animate-fade-up mx-auto w-full max-w-[15rem] sm:max-w-[17rem] lg:mr-0 lg:max-w-[20rem] xl:max-w-[22rem]"
+            className="animate-fade-up mx-auto w-full max-w-[16rem] sm:max-w-[19rem] md:max-w-[21rem] lg:mr-0 lg:max-w-[20rem] xl:max-w-[22rem]"
           >
             {/* Thin accent line drawn just outside the arch */}
             <div className="border-brand-accent rounded-t-full border p-2 sm:p-2.5">
@@ -264,7 +271,7 @@ function HeroText({
             className={cn(
               'animate-fade-up text-on-primary block tracking-tight text-balance wrap-break-word',
               compact
-                ? 'text-[clamp(2.125rem,9vw,2.75rem)] leading-[1.1] font-semibold hyphens-manual sm:text-5xl md:text-[3.5rem] lg:text-[3.25rem] xl:text-[3.75rem] 2xl:text-[4.25rem]'
+                ? 'text-[clamp(2.5rem,11.5vw,3.25rem)] leading-[1.08] font-semibold hyphens-manual sm:text-[3.75rem] md:text-[4.5rem] lg:text-[3.25rem] xl:text-[3.75rem] 2xl:text-[4.25rem]'
                 : cn(
                     'text-[clamp(2.75rem,13vw,4rem)] leading-[1.01] font-bold hyphens-auto sm:text-[4.5rem] sm:leading-[1.05] md:text-[5.5rem] lg:text-[5.75rem] xl:text-[6.25rem] 2xl:text-[6.75rem]',
                     SHORT_SCREEN_TITLE
@@ -289,7 +296,10 @@ function HeroText({
       <p
         style={fadeDelay(homePage.heroTitleLines.length)}
         className={cn(
-          'animate-fade-up mt-2 max-w-xl text-sm leading-relaxed sm:mt-3 sm:text-base md:text-lg lg:text-xl',
+          'animate-fade-up max-w-xl leading-relaxed',
+          compact
+            ? 'mt-5 text-base sm:text-lg md:mt-6 md:max-w-2xl md:text-xl lg:mt-5 lg:max-w-xl'
+            : 'mt-2 text-sm sm:mt-3 sm:text-base md:text-lg lg:text-xl',
           onPhoto ? 'text-on-primary' : 'text-text-inverse/65',
           centered && 'mx-auto'
         )}
@@ -301,7 +311,10 @@ function HeroText({
       <div
         style={fadeDelay(homePage.heroTitleLines.length + 1)}
         className={cn(
-          'animate-fade-up mt-4 flex w-full flex-col gap-3 sm:mt-5 sm:w-auto sm:flex-row sm:items-center md:mt-7 lg:mt-6 [@media(min-width:768px)_and_(max-height:850px)]:mt-4',
+          'animate-fade-up flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:items-center',
+          compact
+            ? 'mt-8 max-w-sm md:mt-10 lg:mt-8'
+            : 'mt-4 sm:mt-5 md:mt-7 lg:mt-6 [@media(min-width:768px)_and_(max-height:850px)]:mt-4',
           centered && 'sm:justify-center'
         )}
       >
@@ -309,7 +322,10 @@ function HeroText({
           href={primaryAction.href}
           external={primaryAction.external}
           variant="primary"
-          className="min-w-[160px] text-sm md:px-8 md:py-4 md:text-base"
+          className={cn(
+            'min-w-[160px] text-sm md:px-8 md:py-4 md:text-base',
+            compact && 'w-full text-base sm:w-auto'
+          )}
         >
           {primaryLabel}
         </PremiumButton>
@@ -319,7 +335,10 @@ function HeroText({
             href={secondary.href}
             external={secondary.external}
             variant="secondary"
-            className="min-w-[160px] text-sm md:px-8 md:py-4 md:text-base"
+            className={cn(
+              'min-w-[160px] text-sm md:px-8 md:py-4 md:text-base',
+              compact && 'w-full text-base sm:w-auto'
+            )}
           >
             {secondary.label}
           </PremiumButton>

@@ -11,7 +11,7 @@ finished (`- [x] … — YYYY-MM-DD`) and rewrites Current state.
 ## Current state
 
 - **Stage:** 1. Prepare
-- **Last done:** branded share image — 2026-11-17
+- **Last done:** mobile and tablet hero, section order on phones — 2026-11-17
 - **Next task:** 4. click-through, then Vercel preview
 - **Waiting on:** Biniam: click-through; Facebook link; task 1 (kickoff call) not yet confirmed
 - **Blockers:** none
@@ -104,6 +104,7 @@ work): one line each, with the quote reference, e.g.
 - [x] Favicon: white logo on navy with a thin accent frame — 2026-11-17
 - [x] Social icons: LinkedIn, Facebook (link to come), email in footer and contact section; navbar solid navy when scrolled — 2026-11-17
 - [x] Share image: branded 1200x630 `public/og-image.jpg` (navy, Lora name, portrait in the brass arch) for Telegram and WhatsApp previews — 2026-11-17
+- [x] Phones and tablets: hero text fills the first screen (larger title, full-width buttons), portrait after scrolling; About and Contact keep the desktop left-then-right order (text first, form first) — 2026-11-17
 
 ## Approvals and revisions
 

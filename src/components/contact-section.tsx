@@ -59,7 +59,8 @@ export function ContactSection({ contactPage }: ContactSectionProps) {
           {formOrMap && <ScrollReveal>{formOrMap}</ScrollReveal>}
 
           {/* Contact details */}
-          <ScrollReveal delay={0.2} className={formOrMap ? 'order-first lg:order-none' : undefined}>
+          {/* Eden: same order as desktop on phones, the form first (Biniam, 2026-11-17) */}
+          <ScrollReveal delay={0.2}>
             <div className={cn('flex flex-col', formOrMap && 'lg:pl-8')}>
               <SectionHeading
                 align={formOrMap ? 'left' : 'center'}

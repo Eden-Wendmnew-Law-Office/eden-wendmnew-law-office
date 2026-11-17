@@ -32,7 +32,7 @@ export function AboutSection({ about }: AboutSectionProps) {
       <Container className="relative z-10">
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
           {/* Left: Text Content */}
-          <div className="order-2 lg:order-1">
+          <div>
             <SectionHeading
               reveal
               align="left"
@@ -54,7 +54,7 @@ export function AboutSection({ about }: AboutSectionProps) {
           {/* Right: the drawing in the accent color, inside an arch with a thin
               accent line (the hero's frame) */}
           {illustration && (
-            <ScrollReveal delay={0.2} className="order-1 lg:order-2">
+            <ScrollReveal delay={0.2}>
               <div className="mx-auto w-full max-w-[15rem] sm:max-w-[17rem] lg:max-w-[20rem]">
                 <div className="border-brand-accent/60 rounded-t-full border p-2 sm:p-2.5">
                   <div className="bg-surface-card relative flex aspect-[4/5] items-end justify-center overflow-hidden rounded-t-full">
