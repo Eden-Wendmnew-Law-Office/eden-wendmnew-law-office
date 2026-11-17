@@ -12,8 +12,8 @@ finished (`- [x] … — YYYY-MM-DD`) and rewrites Current state.
 
 - **Stage:** 2. Build and review — surprise test site, no agreement yet (tasks 0–2 wait for Eden's yes)
 - **Last done:** click-through on dev server, desktop 1366 and phone 390 — 2026-11-17. All pages 200, 404 works, every navbar/footer/section link resolves, no sideways scroll on phone, phone menu opens, images load with alt text, favicon and share image set, no console errors. Skipped as expected for the preview: form sending (placeholder key), map (hidden), `reviewed: true`. Dark mode checked by computed colors and `check:contrast`, not by screenshot. Found: navbar name truncates to "Eden Wendmnew La…" on phone and tablet (template behaviour, fix needs a component change); phone shows as +251941515310 without spaces (left as is). Then: navbar shows "Eden Wendmnew" below 1280 px, full name above; About glow removed below 1024 px — 2026-11-17. Version 1 content and design done
-- **Next task:** 4. Vercel preview: set `NEXT_PUBLIC_SITE_URL` = `https://eden-wendmnew-law-office.vercel.app` in Vercel and redeploy (share image points at localhost:3000 until then), check the share tags, then the surprise message (Version 1)
-- **Waiting on:** Biniam: Vercel environment variable and redeploy
+- **Next task:** 4. send the surprise message (Version 1). Vercel `NEXT_PUBLIC_SITE_URL` set; share image, canonical and sitemap use the vercel.app address (checked 2026-11-17). Hero measured on the live preview at 360x640, 375x667, 390x844, 430x932, 768x1024, 1024x768, 1280x720, 1366x768, 1920x1080: text and both buttons in the first screen everywhere, no sideways scroll. Weak spot: phone turned sideways (844x390) shows only the 72 px title in the first screen
+- **Waiting on:** Biniam: decision on the sideways-phone hero, then the surprise message
 - **Blockers:** none
 
 ## Project
