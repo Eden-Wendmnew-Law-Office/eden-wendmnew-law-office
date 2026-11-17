@@ -68,7 +68,7 @@ first group with an unticked task.
 Version 1, saved as it is built. It is finished only when every line is ticked.
 A ticked line is never generated again, so the client's corrections are safe.
 
-- [ ] Images placed and optimized
+- [x] Images placed and optimized — 2026-11-17
 - [ ] `src/config/site.ts` filled
 - [ ] `src/data/` filled
 - [ ] `.env.local` set
