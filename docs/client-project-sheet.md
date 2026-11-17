@@ -152,6 +152,8 @@ a declined request, a value outside an allowed list).
 | 2026-11-17 | Preview on Vercel (vercel.app address), no domain yet                                                                                        | Biniam                                                                                                                              |
 | 2026-11-17 | Navbar shows "Eden Wendmnew" below 1280 px instead of the cut-off full name; "Eden" alone declined                                           | Biniam; Claude: full name is clearer and is what people search                                                                      |
 | 2026-11-17 | About section glow kept on desktop, removed on phones and tablets                                                                            | Biniam: it cut across the button and illustration in dark mode on phones                                                            |
+| 2026-11-17 | Hero on a sideways phone (844x390) left as is: only the title shows before scrolling                                                         | Biniam: rare view, no major problem                                                                                                 |
+| 2026-11-17 | Version 1 accepted as it is; further changes only after Eden responds                                                                        | Biniam                                                                                                                              |
 
 ## Handoff record
 
