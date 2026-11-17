@@ -31,7 +31,7 @@ finished (`- [x] … — YYYY-MM-DD`) and rewrites Current state.
 | Logins stored at           |                                                                      |
 | PageSpeed (mobile/desktop) |                                                                      |
 | Host (Vercel / cPanel)     | Vercel                                                               |
-| Preview URL                |                                                                      |
+| Preview URL                | https://eden-wendmnew-law-office.vercel.app/                         |
 | Live URL                   |                                                                      |
 | Final payment (date)       |                                                                      |
 
