@@ -70,7 +70,7 @@ A ticked line is never generated again, so the client's corrections are safe.
 
 - [x] Images placed and optimized — 2026-11-17
 - [x] `src/config/site.ts` filled — 2026-11-17
-- [ ] `src/data/` filled
+- [x] `src/data/` filled — 2026-11-17
 - [ ] `.env.local` set
 - [ ] Fonts pinned and files formatted
 - [ ] Checks pass

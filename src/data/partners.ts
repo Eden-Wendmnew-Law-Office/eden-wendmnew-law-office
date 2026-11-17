@@ -7,11 +7,4 @@
 
 import type { Partner } from '@/types/content';
 
-export const PARTNERS: Partner[] = [
-  { name: 'Partner One' },
-  { name: 'Partner Two' },
-  { name: 'Partner Three' },
-  { name: 'Partner Four' },
-  { name: 'Partner Five' },
-  { name: 'Partner Six' },
-];
+export const PARTNERS: Partner[] = [];

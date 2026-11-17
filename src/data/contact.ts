@@ -6,9 +6,10 @@
 import type { ContactPage } from '@/types/content';
 
 export const CONTACT_PAGE: ContactPage = {
-  title: 'Get in Touch',
-  description: 'Your contact description goes here.',
-  formTitle: 'Send us a Message',
-  formDescription: 'Fill out the form below and we will respond shortly.',
-  successMessage: 'Thank you for reaching out. We will get back to you shortly.',
+  title: 'Book a consultation',
+  description:
+    'Describe your matter and Eden will reply. You can also call Monday to Friday, 8:00 AM to 5:00 PM.',
+  formTitle: 'Describe your matter',
+  formDescription: 'A short description is enough. Eden reads every message herself.',
+  successMessage: 'Thank you. Your message has reached Eden Wendmnew Law Office.',
 };

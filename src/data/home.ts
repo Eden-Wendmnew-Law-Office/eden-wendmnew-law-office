@@ -6,22 +6,24 @@
 import type { HomePage } from '@/types/content';
 
 export const HOME_PAGE: HomePage = {
-  heroTitleLines: ['Your Company', 'Hero Title', 'Goes Here'],
-  heroSubtitle: 'Your value proposition goes here.',
-  heroPrimaryButtonText: 'Contact Us',
-  heroSecondaryButtonText: 'Our Services',
+  heroTitleLines: ['Business and investment law', 'in Addis Ababa'],
+  heroSubtitle:
+    'Eden Wendmnew sets up companies, advises foreign investors, registers trademarks and drafts contracts. She also represents clients at all levels of Federal Courts. You deal with her directly.',
+  heroPrimaryButtonText: 'Book a consultation',
+  heroSecondaryButtonText: 'Our services',
   heroSecondaryButtonUrl: '/#services',
 
-  servicesTitle: 'Our Services',
-  servicesSubtitle: 'Your services section description goes here.',
-  projectsTitle: 'Featured Projects',
-  projectsSubtitle: 'Your projects section description goes here.',
-  partnersTitle: 'Trusted By',
-  testimonialsTitle: 'What Our Clients Say',
-  testimonialsSubtitle: 'What people say about working with us.',
+  servicesTitle: 'Services',
+  servicesSubtitle: 'Six areas of work for foreign investors, business owners and individuals.',
+  projectsTitle: 'Work',
+  projectsSubtitle: 'Selected matters.',
+  partnersTitle: 'Clients',
+  testimonialsTitle: 'What clients say',
+  testimonialsSubtitle: 'From clients of Eden Wendmnew Law Office.',
 
-  ctaTitle: 'Ready to Get Started?',
-  ctaSubtitle: 'Your call to action description goes here.',
-  ctaSecondaryButtonText: 'View Services',
+  ctaTitle: 'Tell Eden about your matter',
+  ctaSubtitle:
+    'Send a short description through the form, or call during office hours: Monday to Friday, 8:00 AM to 5:00 PM.',
+  ctaSecondaryButtonText: 'Our services',
   ctaSecondaryButtonUrl: '/#services',
 };
