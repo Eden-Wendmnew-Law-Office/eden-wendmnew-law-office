@@ -271,7 +271,7 @@ function HeroText({
             className={cn(
               'animate-fade-up text-on-primary block tracking-tight text-balance wrap-break-word',
               compact
-                ? 'text-[clamp(2.5rem,11.5vw,3.25rem)] leading-[1.08] font-semibold hyphens-manual sm:text-[3.75rem] md:text-[4.5rem] lg:text-[3.25rem] xl:text-[3.75rem] 2xl:text-[4.25rem]'
+                ? 'text-[clamp(2.5rem,calc((100vw-2rem)/7.4),3.5rem)] leading-[1.08] font-semibold hyphens-manual sm:text-[3.75rem] md:text-[4.5rem] lg:text-[3.25rem] xl:text-[3.75rem] 2xl:text-[4.25rem]'
                 : cn(
                     'text-[clamp(2.75rem,13vw,4rem)] leading-[1.01] font-bold hyphens-auto sm:text-[4.5rem] sm:leading-[1.05] md:text-[5.5rem] lg:text-[5.75rem] xl:text-[6.25rem] 2xl:text-[6.75rem]',
                     SHORT_SCREEN_TITLE
@@ -313,7 +313,7 @@ function HeroText({
         className={cn(
           'animate-fade-up flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:items-center',
           compact
-            ? 'mt-8 max-w-sm md:mt-10 lg:mt-8'
+            ? 'mt-8 max-w-[17rem] sm:max-w-none md:mt-10 lg:mt-8'
             : 'mt-4 sm:mt-5 md:mt-7 lg:mt-6 [@media(min-width:768px)_and_(max-height:850px)]:mt-4',
           centered && 'sm:justify-center'
         )}
@@ -324,7 +324,7 @@ function HeroText({
           variant="primary"
           className={cn(
             'min-w-[160px] text-sm md:px-8 md:py-4 md:text-base',
-            compact && 'w-full text-base sm:w-auto'
+            compact && 'w-full text-[15px] sm:w-auto'
           )}
         >
           {primaryLabel}
@@ -337,7 +337,7 @@ function HeroText({
             variant="secondary"
             className={cn(
               'min-w-[160px] text-sm md:px-8 md:py-4 md:text-base',
-              compact && 'w-full text-base sm:w-auto'
+              compact && 'w-full text-[15px] sm:w-auto'
             )}
           >
             {secondary.label}
