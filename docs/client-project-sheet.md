@@ -11,9 +11,9 @@ finished (`- [x] … — YYYY-MM-DD`) and rewrites Current state.
 ## Current state
 
 - **Stage:** 1. Prepare
-- **Last done:** version 1 built; checks pass; ask-client list saved — 2026-11-17
-- **Next task:** 4. click-through, then Vercel preview; then Custom work (arched hero)
-- **Waiting on:** click-through and preview (Biniam); task 1 (kickoff call) not yet confirmed
+- **Last done:** version 1 built; then sample testimonials shown and dark mode set to black — 2026-11-17
+- **Next task:** Custom work: arched hero (fixes headline size, buttons, portrait), Practice Areas, logo fix; then 4. click-through and preview
+- **Waiting on:** Biniam: yes to the Practice Areas plan; logo choice; light mode (cream or template white); task 1 not yet confirmed
 - **Blockers:** none
 
 ## Project
@@ -97,6 +97,8 @@ work): one line each, with the quote reference, e.g.
 `- [ ] Equipment page + homepage section — quote Q-012`.
 
 - [ ] Arched-frame hero: homepage hero, replacing the template layouts (navy gradient, portrait in a brass arch, per docs/brand-previews/hero-options.html) — quote: none, Digital Aksumite's own build
+- [ ] Practice Areas: /practice-areas page + homepage section after About, links in navbar and footer; Services stay as they are — quote: none, Digital Aksumite's own build (plan to approve first)
+- [ ] Logo fix: crop to the figure, white version for navy areas — waiting on Biniam's choice
 
 ## Approvals and revisions
 
@@ -112,9 +114,12 @@ work): one line each, with the quote reference, e.g.
 Anything agreed that the Blueprint or package does not show (extra work quoted,
 a declined request, a value outside an allowed list).
 
-| Date | Decision | Reason |
-| ---- | -------- | ------ |
-|      |          |        |
+| Date       | Decision                                                                                          | Reason                                       |
+| ---------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------- |
+| 2026-11-17 | Dark mode uses the template's black surfaces, not brand.md's navy                                 | Biniam                                       |
+| 2026-11-17 | Version 1 shows 3 clearly labelled sample testimonials; real quotes replace them before launch    | Biniam: Eden sees the section in the preview |
+| 2026-11-17 | Practice Areas gets its own page and homepage section; Services stays                             | Biniam: a fuller homepage                    |
+| 2026-11-17 | All colors, fonts and card styles come from site.ts and the shared components, never set per page | Biniam: consistency                          |
 
 ## Handoff record
 
