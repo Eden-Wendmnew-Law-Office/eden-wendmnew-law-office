@@ -11,9 +11,9 @@ finished (`- [x] … — YYYY-MM-DD`) and rewrites Current state.
 ## Current state
 
 - **Stage:** 2. Build and review — surprise test site, no agreement yet (tasks 0–2 wait for Eden's yes)
-- **Last done:** sheet set to the surprise path — 2026-11-17
-- **Next task:** 4. click-through, then Vercel preview, then the surprise message (Version 1)
-- **Waiting on:** Biniam: click-through and Vercel preview
+- **Last done:** click-through on dev server, desktop 1366 and phone 390 — 2026-11-17. All pages 200, 404 works, every navbar/footer/section link resolves, no sideways scroll on phone, phone menu opens, images load with alt text, favicon and share image set, no console errors. Skipped as expected for the preview: form sending (placeholder key), map (hidden), `reviewed: true`. Dark mode checked by computed colors and `check:contrast`, not by screenshot. Found: navbar name truncates to "Eden Wendmnew La…" on phone and tablet (template behaviour, fix needs a component change); phone shows as +251941515310 without spaces
+- **Next task:** 4. decide the navbar name, then Vercel preview, then the surprise message (Version 1)
+- **Waiting on:** Biniam: navbar name decision, Vercel preview
 - **Blockers:** none
 
 ## Project
