@@ -193,7 +193,7 @@ export const siteConfig = {
   url: process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000',
   // Path under public/, e.g. '/logo.png' — used in navbar, footer, icons and
   // structured data. Empty = no logo yet: the name shows as text.
-  logo: '/logo.jpg',
+  logo: '/logo.png',
   logoAlt: 'Eden Wendmnew Law Office logo',
   // Navbar and footer: 'icon' → a square mark in a small box with the name
   // beside it; 'wide' → a wordmark (logo with the name in it) shown alone,
@@ -201,7 +201,7 @@ export const siteConfig = {
   logoShape: 'icon' as LogoShape,
   // Optional light version of the logo for the navbar and footer, which sit on
   // the primary color (a dark logo disappears there). Empty = `logo`.
-  logoOnPrimary: '',
+  logoOnPrimary: '/logo-on-primary.png',
   // Open Graph locale (e.g. 'en_US', 'am_ET') and <html lang> value
   locale: 'en_US',
   language: 'en',
