@@ -61,7 +61,8 @@ export function Navbar({ links: allNavLinks, tabletLinks: tabletNavLinks }: Navb
     >
       <Container>
         <nav className="flex h-16 items-center justify-between gap-4">
-          {/* Logo - long names truncate to one line; the footer shows the full name */}
+          {/* Logo - site.navShortName below xl; long names truncate to one line;
+              the footer shows the full name */}
           <Link
             href="/"
             title={siteConfig.name}
@@ -70,7 +71,7 @@ export function Navbar({ links: allNavLinks, tabletLinks: tabletNavLinks }: Navb
               'hover:text-brand-accent-text text-on-primary'
             )}
           >
-            <SiteLogo nameClassName="truncate" />
+            <SiteLogo nameClassName="truncate" shortBelowXl />
           </Link>
 
           {/* Desktop Navigation - lg and up */}

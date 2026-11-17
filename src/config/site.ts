@@ -202,6 +202,9 @@ export const siteConfig = {
 
   // ── Brand Identity ──────────────────────────────────────────────────────────
   name: 'Eden Wendmnew Law Office',
+  // Navbar name below 1280 px (phones, tablets, small laptops), where the full name would be cut off.
+  // Empty = the full name everywhere.
+  navShortName: 'Eden Wendmnew',
   tagline: 'Attorney and Consultant at Law',
   description:
     'Eden Wendmnew is an Attorney and Consultant at Law in Addis Ababa. She advises foreign investors and business owners on company formation, investment, trademarks, contracts and compliance, and represents clients at all levels of Federal Courts.',

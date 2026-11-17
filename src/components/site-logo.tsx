@@ -9,11 +9,31 @@
 
 import Image from 'next/image';
 import { siteConfig } from '@/config/site';
+import { cn } from '@/lib/utils';
 
 const src = siteConfig.logoOnPrimary || siteConfig.logo;
 
-export function SiteLogo({ nameClassName }: { nameClassName?: string }) {
-  if (!src) return <span className={nameClassName}>{siteConfig.name}</span>;
+/** shortBelowXl: below the xl breakpoint show site.navShortName, if set
+ * (navbar only; the footer always shows the full name). */
+function Name({ className, shortBelowXl }: { className?: string; shortBelowXl?: boolean }) {
+  const short = siteConfig.navShortName;
+  if (!shortBelowXl || !short) return <span className={className}>{siteConfig.name}</span>;
+  return (
+    <>
+      <span className={cn(className, 'xl:hidden')}>{short}</span>
+      <span className={cn(className, 'hidden xl:inline')}>{siteConfig.name}</span>
+    </>
+  );
+}
+
+export function SiteLogo({
+  nameClassName,
+  shortBelowXl,
+}: {
+  nameClassName?: string;
+  shortBelowXl?: boolean;
+}) {
+  if (!src) return <Name className={nameClassName} shortBelowXl={shortBelowXl} />;
 
   if (siteConfig.logoShape === 'wide') {
     return (
@@ -38,7 +58,7 @@ export function SiteLogo({ nameClassName }: { nameClassName?: string }) {
           className="h-6 w-auto object-contain"
         />
       </div>
-      <span className={nameClassName}>{siteConfig.name}</span>
+      <Name className={nameClassName} shortBelowXl={shortBelowXl} />
     </>
   );
 }
