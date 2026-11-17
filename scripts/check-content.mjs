@@ -104,7 +104,7 @@ const siteSchema = z.object({
   }),
   footer: z.object({ description: text, copyrightEntity: text }),
   hero: z.object({
-    layout: z.enum(['gradient', 'image', 'split']),
+    layout: z.enum(['gradient', 'image', 'split', 'arched']),
     image: z.object({ url: z.string(), alt: z.string() }),
     imagePosition: text,
     overlay: z.number().min(0).max(1),

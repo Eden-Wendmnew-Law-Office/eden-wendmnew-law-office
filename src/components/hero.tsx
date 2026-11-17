@@ -5,7 +5,11 @@
  *   'image'    — full-width photo under a primary-color overlay, text centred
  *   'split'    — text on the primary color, photo on the right fading into it
  *                (under the text on phones)
- * 'image' and 'split' fall back to 'gradient' while hero.image.url is empty.
+ *   'arched'   — client custom work (Eden Wendmnew): primary-to-primary-dark
+ *                gradient, eyebrow + text on the left, an upright portrait in
+ *                black and white inside an arch with a thin accent line on the
+ *                right (under the text on phones)
+ * Photo layouts fall back to 'gradient' while hero.image.url is empty.
  * `settings` defaults to site.ts → hero; a preview page can pass its own.
  */
 
@@ -46,7 +50,48 @@ export function Hero({
 
   if (layout === 'image') return <ImageHero homePage={homePage} settings={settings} />;
   if (layout === 'split') return <SplitHero homePage={homePage} settings={settings} />;
+  if (layout === 'arched') return <ArchedHero homePage={homePage} settings={settings} />;
   return <GradientHero homePage={homePage} />;
+}
+
+/**
+ * Text left, portrait right in an arch. Sized so title, subtitle and both
+ * buttons are on screen at load from 360 px phones to 1536 px desktops; the
+ * portrait sits under the text below lg.
+ */
+function ArchedHero({ homePage, settings }: PhotoHeroProps) {
+  const { url, alt } = settings.image;
+
+  return (
+    <section className="from-brand-primary to-brand-primary-dark relative overflow-hidden bg-gradient-to-br">
+      <Container className="relative z-10">
+        <div className="grid grid-cols-1 items-center gap-10 pt-28 pb-14 md:pt-32 md:pb-20 lg:min-h-[100svh] lg:grid-cols-[minmax(0,1.25fr)_minmax(0,0.75fr)] lg:gap-16 lg:py-28">
+          <HeroText homePage={homePage} eyebrow={siteConfig.tagline} size="compact" />
+
+          <div
+            style={fadeDelay(homePage.heroTitleLines.length + 2)}
+            className="animate-fade-up mx-auto w-full max-w-[15rem] sm:max-w-[17rem] lg:mr-0 lg:max-w-[20rem] xl:max-w-[22rem]"
+          >
+            {/* Thin accent line drawn just outside the arch */}
+            <div className="border-brand-accent rounded-t-full border p-2 sm:p-2.5">
+              <div className="relative aspect-[472/697] overflow-hidden rounded-t-full">
+                {/* eslint-disable-next-line @next/next/no-img-element -- static export; the file is already sized by images:optimize */}
+                <img
+                  src={url}
+                  alt={alt}
+                  width={472}
+                  height={697}
+                  fetchPriority="high"
+                  className="absolute inset-0 h-full w-full object-cover grayscale"
+                  style={{ objectPosition: settings.imagePosition }}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </Container>
+    </section>
+  );
 }
 
 function GradientHero({ homePage }: HeroProps) {
@@ -171,8 +216,20 @@ function HeroText({
   homePage,
   centered = false,
   onPhoto = false,
+  eyebrow = '',
+  size = 'default',
   className,
-}: HeroProps & { centered?: boolean; onPhoto?: boolean; className?: string }) {
+}: HeroProps & {
+  centered?: boolean;
+  onPhoto?: boolean;
+  /** Small uppercase label above the title in the accent color; empty = none */
+  eyebrow?: string;
+  /** 'compact' = smaller title for longer headline lines, never hyphenated */
+  size?: 'default' | 'compact';
+  className?: string;
+}) {
+  const compact = size === 'compact';
+
   // Main button: site.ts → conversion.primary, with the hero's own label when
   // set. Second button: always the hero's own link (e.g. Our Services).
   const primaryLabel = homePage.heroPrimaryButtonText || primaryAction.label;
@@ -190,15 +247,29 @@ function HeroText({
         className
       )}
     >
+      {eyebrow && (
+        <p
+          style={fadeDelay(0)}
+          className="animate-fade-up text-brand-accent mb-4 text-xs font-medium tracking-[0.1em] uppercase sm:text-sm"
+        >
+          {eyebrow}
+        </p>
+      )}
+
       {/* Title - 1 to 3 lines: editable via heroTitleLines */}
       <h1 className="w-full">
         {homePage.heroTitleLines.map((line, index) => (
           <span
             key={index}
             className={cn(
-              'animate-fade-up text-on-primary block text-[clamp(2.75rem,13vw,4rem)] leading-[1.01] font-bold tracking-tight text-balance wrap-break-word hyphens-auto sm:text-[4.5rem] sm:leading-[1.05] md:text-[5.5rem] lg:text-[5.75rem] xl:text-[6.25rem] 2xl:text-[6.75rem]',
-              SHORT_SCREEN_TITLE,
-              index > 0 && 'mt-1.5'
+              'animate-fade-up text-on-primary block tracking-tight text-balance wrap-break-word',
+              compact
+                ? 'text-[clamp(2.125rem,9vw,2.75rem)] leading-[1.1] font-semibold hyphens-manual sm:text-5xl md:text-[3.5rem] lg:text-[3.25rem] xl:text-[3.75rem] 2xl:text-[4.25rem]'
+                : cn(
+                    'text-[clamp(2.75rem,13vw,4rem)] leading-[1.01] font-bold hyphens-auto sm:text-[4.5rem] sm:leading-[1.05] md:text-[5.5rem] lg:text-[5.75rem] xl:text-[6.25rem] 2xl:text-[6.75rem]',
+                    SHORT_SCREEN_TITLE
+                  ),
+              index > 0 && (compact ? 'mt-1' : 'mt-1.5')
             )}
             style={
               {

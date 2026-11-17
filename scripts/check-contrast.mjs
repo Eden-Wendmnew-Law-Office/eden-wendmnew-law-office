@@ -59,7 +59,8 @@ const HERO_PHOTO_RULES = [
   { fg: 'onPrimary', bg: 'overlayOnBlack', min: 4.5 },
 ];
 const { hero } = siteConfig;
-const photoHero = hero.layout !== 'gradient' && Boolean(hero.image.url);
+// 'arched' keeps its text on the primary color, beside the photo, not on it
+const photoHero = ['image', 'split'].includes(hero.layout) && Boolean(hero.image.url);
 
 /** Accent used as text on the dark page (dark mode) */
 const DARK_ACCENT_RULES = [{ fg: 'accent', bg: 'page', min: 3 }];

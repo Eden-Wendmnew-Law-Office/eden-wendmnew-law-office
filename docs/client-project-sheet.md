@@ -96,7 +96,7 @@ Agreed extra work beyond the package ([`packages.md`](packages.md) → Extra
 work): one line each, with the quote reference, e.g.
 `- [ ] Equipment page + homepage section — quote Q-012`.
 
-- [ ] Arched-frame hero: homepage hero, replacing the template layouts (navy gradient, portrait in a brass arch, per docs/brand-previews/hero-options.html) — quote: none, Digital Aksumite's own build
+- [x] Arched-frame hero: homepage hero, replacing the template layouts (navy gradient, portrait in a brass arch, per docs/brand-previews/hero-options.html) — quote: none, Digital Aksumite's own build — built 2026-11-17 (`hero.layout: 'arched'`)
 - [ ] Practice Areas: /practice-areas page + homepage section after About, links in navbar and footer; Services stay as they are — quote: none, Digital Aksumite's own build (plan to approve first)
 - [x] Logo fix: cropped to the figure; navy `logo.png` and white `logo-on-primary.png`, same drawing — 2026-11-17
 

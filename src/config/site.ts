@@ -25,7 +25,7 @@ export type ChatChannel = 'none' | 'whatsapp' | 'telegram';
 export type LogoShape = 'icon' | 'wide';
 
 /** Homepage hero look; see `hero` below. */
-export type HeroLayout = 'gradient' | 'image' | 'split';
+export type HeroLayout = 'gradient' | 'image' | 'split' | 'arched';
 
 export interface ContactPerson {
   name: string;
@@ -116,14 +116,19 @@ export const siteConfig = {
   //              overlay; title, subtitle and buttons centred
   // 'split'    → text on the primary color on the left, the photo on the right
   //              fading into it; on phones the photo sits under the text
+  // 'arched'   → custom (Eden): text left, upright portrait in an arch with an
+  //              accent line on the right; under the text on phones
   // 'image' and 'split' need image.url (a photo in public/hero/, ~1920 px wide
   // after `npm run images:optimize`); without it the gradient shows.
   hero: {
-    layout: 'gradient' as HeroLayout,
-    image: { url: '', alt: '' },
+    layout: 'arched' as HeroLayout,
+    image: {
+      url: '/hero/eden-portrait.webp',
+      alt: 'Eden Wendmnew, Attorney and Consultant at Law',
+    },
     // Focal point (CSS object-position) so narrow screens keep the right part
     // of the photo, e.g. 'center', '30% 50%', 'right bottom'
-    imagePosition: 'center',
+    imagePosition: 'top',
     // How strongly the primary color covers the photo in 'image' (0–1). Text
     // stays readable on any photo when `npm run check:contrast` passes.
     overlay: 0.7,
