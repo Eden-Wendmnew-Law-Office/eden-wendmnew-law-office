@@ -220,7 +220,7 @@ export const siteConfig = {
     address: 'Near the First Instance Court, Kolfe Keranio, Addis Ababa, Ethiopia',
     officeHours: 'Mon–Fri, 8:00 AM – 5:00 PM',
     // Google Maps → Share → Embed a map → copy only the src="..." URL
-    mapEmbedUrl: 'https://maps.google.com/maps?q=9.014277,38.705372&z=17&output=embed',
+    mapEmbedUrl: '',
     // Default country for the phone field in the contact form (ISO code)
     defaultPhoneCountry: 'ET',
     // Contact people shown in the contact section instead of the single
@@ -260,10 +260,10 @@ export const siteConfig = {
 
   // ── SEO & Open Graph ────────────────────────────────────────────────────────
   seo: {
-    titleDefault: 'Eden Wendmnew Law Office | Attorney and Consultant at Law, Addis Ababa',
+    titleDefault: 'Eden Wendmnew Law Office | Lawyer in Addis Ababa',
     titleTemplate: '%s | Eden Wendmnew Law Office',
     metaDescription:
-      'Eden Wendmnew, Attorney and Consultant at Law in Addis Ababa. Company formation, investment consulting, trademark registration, contract drafting, regulatory compliance and court representation.',
+      'Eden Wendmnew, Attorney and Consultant at Law in Addis Ababa: company formation, investment, trademarks, contracts, compliance and court cases.',
     keywords: [
       'lawyer Addis Ababa',
       'company formation Ethiopia',

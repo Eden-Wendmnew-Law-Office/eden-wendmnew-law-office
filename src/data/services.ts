@@ -7,7 +7,7 @@
 import type { Service, ServicesPage } from '@/types/content';
 
 const HOW_TO_START =
-  'Book a consultation through the form and describe your matter. Eden replies and arranges the next step.';
+  'Book a consultation through the form with the details of your matter. Eden replies and arranges the next step.';
 const HOW_TO_START_TAGLINE = 'Start with a consultation.';
 const CTA_TEXT = 'Book a consultation';
 

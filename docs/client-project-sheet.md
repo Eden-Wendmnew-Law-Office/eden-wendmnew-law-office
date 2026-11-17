@@ -73,7 +73,7 @@ A ticked line is never generated again, so the client's corrections are safe.
 - [x] `src/data/` filled — 2026-11-17
 - [x] `.env.local` set — 2026-11-17 (localhost until the domain is decided)
 - [x] Fonts pinned and files formatted — 2026-11-17
-- [ ] Checks pass
+- [x] Checks pass — 2026-11-17
 - [ ] `docs/ask-client.md` saved
 - [ ] Pushed and reported
 

@@ -41,7 +41,7 @@ export const ABOUT_PAGE_SECTIONS = {
       {
         roman: 'II',
         title: 'Protecting it',
-        body: 'Trademark Registration for brand names and logos, and Contract Drafting before you sign.',
+        body: 'Trademark Registration for your business name and logo, and Contract Drafting before you sign.',
       },
       {
         roman: 'III',
@@ -84,6 +84,6 @@ export const ABOUT_PAGE_SECTIONS = {
     sectionLabel: 'Who she serves',
     headline: 'Foreign investors, business owners and individuals',
     body: 'Foreign investors come for the investment permit, the company structure and the capital rules. Local business owners come for registration, trademarks, contracts and compliance. Individuals come for civil and criminal cases.',
-    closing: 'Book a consultation and describe your matter.',
+    closing: 'Book a consultation and tell Eden about your matter.',
   },
 } as const;
